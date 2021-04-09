@@ -18,7 +18,7 @@ public class Transportation {
     
     Scanner input = new Scanner(System.in);
     
-    int cCar1R = 1; int cCar2 = 1;
+    int cCar1R = 1; int cCar2R = 1;
     int Motorbike1R = 1; int Motorbike2R = 1; //Ready
     int Car1R = 1; int Car2R = 1;
     
