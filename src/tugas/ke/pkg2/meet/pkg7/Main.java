@@ -26,9 +26,9 @@ public class Main {
         
         int selection = 99;
         int menuSelection = 99;
-        int selection3 = 99;
+        //int selection3 = 99;
         int ANMSelection = 99;
-        int ANMSelection2 = 99;
+        int BorrowSelection = 99;
         
          
     while(selection != 0){
@@ -81,7 +81,7 @@ public class Main {
                                     ANMSelection = input.nextInt();
                                     switch(ANMSelection){
                                         case 1:
-                                            while(ANMSelection2 != 0){
+                                            while(BorrowSelection != 0){
                                                 System.out.println("===== BORROW A VEHICLE =====");
                                                 System.out.println("What a vechile do you want to borrow?");
                                                 System.out.println("1.Commercial Car");
@@ -89,14 +89,32 @@ public class Main {
                                                 System.out.println("3.Car");
                                                 System.out.println("0.Back");
                                                 
-                                                ANMSelection2 = input.nextInt();
-                                                    switch(ANMSelection2){
-                                                        case 1:
+                                                BorrowSelection = input.nextInt();
+                                                    switch(BorrowSelection){
+                                                        case 1: //Pilihannya Mobil Niaga
                                                             int comcarSelect = 99;
-                                                            
-                                                            comcarSelect = input.nextInt();
-                                                            break;
-                                                        case 2:
+                                                            while(comcarSelect != 0){
+                                                                System.out.println("===== COMMERCIAL CAR =====");
+                                                                System.out.println("Wich Commercial Car do you want to borrow?\n");
+                                                                System.out.println("1.GranMax Pro");
+                                                                System.out.println("2.SuzuQi APV Van");
+                                                                System.out.println("3.Show Commercial Car Is ready or not");
+                                                                System.out.println("0.Back");
+                                                                comcarSelect = input.nextInt();
+                                                                switch(comcarSelect){
+                                                                    case 1:
+                                                                        cc.CommercialCar1();
+                                                                        break;
+                                                                    case 2:
+                                                                        cc.CommercialCar2();
+                                                                        break;
+                                                                    case 3:
+                                                                        cc.ShowComCarReady();
+                                                                        break;                                                                   
+                                                                }
+                                                                break;
+                                                            }
+                                                        case 2: //Pilihannya Motor
                                                             int motorSelect = 99;
                                                             while(motorSelect != 0){
                                                                 System.out.println("===== MOTORCYCLE =====");
@@ -119,36 +137,50 @@ public class Main {
                                                                 }
                                                             }
                                                             break;
-                                                        case 3:
+                                                        case 3: //Pilohannya Mobil
                                                             int carSelect = 99;
-                                                            
-                                                            carSelect = input.nextInt();
-                                                            break;
-                                                    } 
-                                            }
+                                                            while(carSelect != 0){
+                                                                System.out.println("===== CAR =====");
+                                                                System.out.println("Wich Car do you want to borrow?\n");
+                                                                System.out.println("1.TeZla mX TBC");
+                                                                System.out.println("2.AvanSa Qek");
+                                                                System.out.println("3.Show Car Is ready or not");
+                                                                System.out.println("0.Back");
+                                                                carSelect = input.nextInt();
+                                                                switch(carSelect){
+                                                                    case 1:
+                                                                        c.Car1();
+                                                                        break;
+                                                                    case 2:
+                                                                        c.Car2();
+                                                                        break;
+                                                                    case 3:
+                                                                        c.ShowCarReady();
+                                                                        break;
+                                                                }
+                                                            }
+                                                        break;
+                                                    }
+                                            } 
+                                        break;    
                                     }
-                                }
-               
-                                //break;
+                                }//add new member selection
                             case 2:
-                                m.showDataMember();
                                 break;
                             case 3:
-                                
                                 break;
-                        }
+                        }//menu selection        
                     }
-                }else{
-                    System.out.println("Anda belum Login !");
+                }else{ //if else
+                    System.out.println("You're not logged in");
                 }
-            case 3:
+        } // switch Selection
+           
                 
                
-       }
+    }//while selection
         
     }    
       
         
-    }
-    
 }
