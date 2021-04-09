@@ -52,7 +52,7 @@ public class Main {
                        System.out.println("===== REGIST =====");
                         System.out.println("1.Add New Member");
                         System.out.println("2.Show Member Profiles");
-                        System.out.println("3.Borrow a vehicle");
+                        
                         
                         System.out.println("0.Back");
                         menuSelection = input.nextInt();
@@ -74,6 +74,7 @@ public class Main {
                                 m.setNama(nama);m.setIdMember(idm);m.setAlamat(alamat);m.setNoHp(nohp);
                                 
                                 while(ANMSelection != 0){
+                                    System.out.println("=====      =====");
                                     System.out.println("1.Borrow a vehicle");
                                     System.out.println("2.Repay the vechicle");
                                     System.out.println("0.Back");
@@ -134,6 +135,7 @@ public class Main {
                                                                         break;
                                                                     case 3:
                                                                         mtr.ShowMotorReady();
+                                                                        break;
                                                                 }
                                                             }
                                                             break;
@@ -166,9 +168,9 @@ public class Main {
                                     }
                                 }//add new member selection
                             case 2:
+                                
                                 break;
-                            case 3:
-                                break;
+                            
                         }//menu selection        
                     }
                 }else{ //if else
