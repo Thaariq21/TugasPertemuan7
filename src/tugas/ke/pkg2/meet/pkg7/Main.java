@@ -61,12 +61,12 @@ public class Main {
                             case 1:
                                 //Mengisi Data member
                                 System.out.println("===== ADD NEW MEMBER =====");
-                                System.out.println("Masukan data member :");
-                                System.out.print("Nama      :");
+                                System.out.println("Input data:");
+                                System.out.print("Name      :");
                                 String nama = input.next();
                                 System.out.print("ID Member :");
                                 String idm = input.next();
-                                System.out.print("Alamat    :");
+                                System.out.print("Address    :");
                                 String alamat = input.next();
                                 System.out.print("No Hp     :");
                                 int nohp = input.nextInt();
