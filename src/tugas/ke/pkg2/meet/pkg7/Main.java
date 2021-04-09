@@ -26,7 +26,6 @@ public class Main {
         
         int selection = 99;
         int menuSelection = 99;
-        //int selection3 = 99;
         int ANMSelection = 99;
         int BorrowSelection = 99;
         
