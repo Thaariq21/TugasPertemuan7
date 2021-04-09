@@ -59,7 +59,7 @@ public class CommercialCar extends Transportation{
             
         }
     }
-    public void ShowMotorReady(){
+    public void ShowComCarReady(){
         System.out.println("Com Car 1 :"+this.comCar1+"| Com Car 2 :"+this.comCar2);
     }
 }
