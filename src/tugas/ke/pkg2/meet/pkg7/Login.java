@@ -26,12 +26,12 @@ public class Login {
     
     
     public void login(){
-        System.out.println("---------------------------");
+        System.out.println("===== LOGIN =====");
         System.out.print("Username  :");
         userName = input.nextLine();
         System.out.print("Password  :");
         password = input.nextLine();
-        System.out.println("---------------------------");
+        
     }
     public boolean cekLogin(){
       

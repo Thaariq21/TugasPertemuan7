@@ -10,7 +10,7 @@ package tugas.ke.pkg2.meet.pkg7;
  * @author ahmad nur hidaya
  */
 public class Motorcycle extends Transportation{
-     private int motor1;
+    private int motor1;
     private int motor2;
     
     public Motorcycle(){
